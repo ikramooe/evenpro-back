@@ -72,6 +72,7 @@ class HomePageController extends Controller
             PageSection::updateContent('hero_section', $heroContent);
         }
 
+        dd($request->all());
         // Update about section
         if ($request->has('about_section')) {
             $request->validate([
